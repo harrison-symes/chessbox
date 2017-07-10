@@ -1,12 +1,12 @@
 import React from 'react'
 import {HashRouter as Router, Route} from 'react-router-dom'
-import Greetings from './Greetings'
+import Board from './board'
 
 const App = () => (
   <Router>
     <div className='app-container'>
       <h1>Hello</h1>
-      <Route exact path="/" component={Greetings} />
+      <Board size={8} />
     </div>
   </Router>
 )
